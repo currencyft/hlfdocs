@@ -37,17 +37,17 @@ Setup the Java home
 
 ### Start the Hyperledger Fabric
 
-    ```cd ~```
+    cd ~
     
-    ```cd hlfpte```
+    cd hlfpte
 
-    ```cd hlfpte```
+    cd hlfpte
     
-    ```cd fabric-samples```
+    cd fabric-samples
     
-    ```cd test-network```
+    cd test-network
 
-    ```./network.sh down```
+    ./network.sh down
 
 - ./network.sh up createChannel -c channel1 -ca -s couchdb
 
