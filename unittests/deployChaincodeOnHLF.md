@@ -1,8 +1,13 @@
 ## Deploying Chaincode on Hyperledger Fabric 
 
-use the link below to understand bringing up the network
+Use the link below to read up more on deploying chaincodes and bringing up the network
+
 
 https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html?highlight=hyperledger%20chaincode
+
+Execute the contents of this file if this hasn't been done before.
+
+### After Developing the Chaincode on IntelliJ
 
 1. Inside IntelliJ, click on Gradle tab on the right
 2. The Gradle panel opens
@@ -12,7 +17,7 @@ https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html?highlight=
 6. Right click on "installDist" and click Run
 7. Proceed below
 
-Setup the Java home
+### Setup the Java home
 1. list all java versions running on the system by typing the command below
     
     ```/usr/libexec/java_home -V```
