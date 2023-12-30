@@ -63,9 +63,23 @@ Execute the contents of this file if this hasn't been done before.
     
     ```./network.sh up createChannel -c channel1 -ca -s couchdb ```
     
+2. Compile and deploy the chaincode. 
+
+    - First Install Java version 11.
+    - Then obtain Java version 11 path using this code below.
+
+    ```/usr/libexec/java_home -V```
+
+    - The path is as below depending on the java 11 on your machine.
     
+    ```/Users/peteaston/Library/Java/JavaVirtualMachines/corretto-11.0.21/Contents/Home```
+    
+    - Use the path above as below in the command to compile and deploy the chaincode.
+
+    - **Note that you must install and use Java 11 in the class path to deploy the chaincode otherwise, you will get error below when calling the contract methods**
+
     ```JAVA_HOME=/Users/peteaston/Library/Java/JavaVirtualMachines/corretto-11.0.21/Contents/Home ./network.sh deployCC -ccn walletcc -ccp /Users/peteaston/ge/walletcc/walletcc -ccl java -c channel1```
 
-2. Note that you must install and use Java 11 in the class path to deploy the chaincode otherwise, you will get error below when calling the contract methods
+2. 
 
     ```Error: endorsement failure during invoke. response: status:500 message:"Undefined contract called"```
