@@ -14,7 +14,7 @@ https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html?highlight=
 
 Setup the Java home
 1. list all java versions running on the system by typing the command below
-    - /usr/libexec/java_home -V
+```/usr/libexec/java_home -V```
 2. below is listed
     - /opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home
 3. next configure JAVA_HOME
