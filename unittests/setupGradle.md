@@ -2,7 +2,8 @@
 
 1. Setup the repositories on the gradle as below:
 
-    ```repositories {
+    ```
+    repositories {
         mavenCentral()
         maven {
             url 'https://jitpack.io'
