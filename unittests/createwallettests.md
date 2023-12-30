@@ -35,13 +35,19 @@ Setup the Java home
     ```/opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home```
 
 
-### START THE HYPERLEDGER FABRIC
-- cd ~
-- cd hlfpte
-- cd fabric-samples
-- cd test-network
+### Start the Hyperledger Fabric
 
-- ./network.sh down
+    ```cd ~```
+    
+    ```cd hlfpte```
+
+    ```cd hlfpte```
+    
+    ```cd fabric-samples```
+    
+    ```cd test-network```
+
+    ```./network.sh down```
 
 - ./network.sh up createChannel -c channel1 -ca -s couchdb
 
