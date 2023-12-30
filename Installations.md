@@ -89,14 +89,16 @@ Install curl
 
 
     ```export LDFLAGS="-L/opt/homebrew/opt/curl/lib"```
-    export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
+    
+    
+    ```export CPPFLAGS="-I/opt/homebrew/opt/curl/include"```
 5. close the terminal and re-open it again
 6. execute the following command
     
-    which curl
+    ```which curl```
 7. the new curl folder will be obtained
     
-    /opt/homebrew/opt/curl/bin/curl
+    ```/opt/homebrew/opt/curl/bin/curl```
 
 Install golang
 1. head over to the web page https://go.dev/dl/
