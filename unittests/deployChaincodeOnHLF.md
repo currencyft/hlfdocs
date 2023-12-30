@@ -8,8 +8,7 @@ https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html?highlight=
 Execute the contents of this file if this hasn't been done before.
 
 ### After Developing the Chaincode on IntelliJ
-
-***
+<hr style="border: 1px solid gray" />
 
 1. Inside IntelliJ, click on Gradle tab on the right
 2. The Gradle panel opens
