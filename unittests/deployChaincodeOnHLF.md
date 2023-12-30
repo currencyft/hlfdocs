@@ -1,6 +1,6 @@
 ## Deploying Chaincode on Hyperledger Fabric 
 
-Use the link below to read up more on deploying chaincodes and bringing up the network
+<code>Use the link below to read up more on deploying chaincodes and bringing up the network</code>
 
 
 https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html?highlight=hyperledger%20chaincode
