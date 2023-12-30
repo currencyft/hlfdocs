@@ -61,7 +61,5 @@ Execute the contents of this file if this hasn't been done before.
     ```./network.sh down```
     
     
-    ```./network.sh up createChannel -c channel1 -ca -s couchdb```
-    
-    
+    ```./network.sh up createChannel -c channel1 -ca -s couchdb ```
     ```$JAVA_HOME ./network.sh deployCC -ccn walletcc -ccp /Users/peteaston/ge/walletcc/walletcc -ccl java -c channel1```
