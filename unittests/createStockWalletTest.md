@@ -4,7 +4,7 @@
 
 1. Deploy chaincode and run some tests
 
-    <div style=" white-space: normal; word-wrap: break-word;">
+    <div style=" white-space: normal; word-wrap: break-word; width:300px">
 
     ```
     ./network.sh down
