@@ -10,6 +10,10 @@
         }
     }
 
+    dependencies {
+        implementation 'com.github.guepardoapps:kulid:1.1.2.0'
+    }
+
 2. ***Note: If not setup as above, the following error might be thrown when adding kulid***
     
     ```Could not find com.github.guepardoapps:kulid:1.1.2.0.```
