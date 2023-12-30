@@ -16,17 +16,17 @@ Setup the Java home
 1. list all java versions running on the system by typing the command below
 ```/usr/libexec/java_home -V```
 2. below is listed
-    - /opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home
+```/opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home```
 3. next configure JAVA_HOME
-    - nano ~/.zshrc
+```nano ~/.zshrc```
 4. Copy and paste the java path in 2. above into the end of the .zshrc file
 5. Save and close
 6. Enter the code below to activate the path
-    - source ~/.zshrc
+```source ~/.zshrc```
 7. Test the java path
-    - echo $JAVA_HOME
+```echo $JAVA_HOME```
 8. We will get the path below
-    - /opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home
+```/opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home```
 
 
 ### START THE HYPERLEDGER FABRIC
