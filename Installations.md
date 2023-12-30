@@ -93,5 +93,5 @@ Install jq
 
 1. Run the comand below to install jq
     brew install jq
-R2ndc805&%?6w@
+
 
