@@ -1,4 +1,4 @@
-## Launching Hyperledger Fabric 
+## Deploying Chaincode on Hyperledger Fabric 
 
 use the link below to understand bringing up the network
 
