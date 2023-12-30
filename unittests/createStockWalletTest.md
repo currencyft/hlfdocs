@@ -1,5 +1,13 @@
 ## Deploy createStockWalletTest
 
+<style>
+.force-word-wrap pre code {
+   white-space: normal;
+   word-wrap: break-word;
+}
+</style>
+
+
 1. Deploy chaincode and run some tests
 
     ```
