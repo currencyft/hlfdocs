@@ -20,6 +20,6 @@ Git tutorial
     git clone _url_
 11. A prompt will ask for Username: PeterAnyaduba
 12. Press Enter
-13. A prompt will ask for Password: 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
+13. A prompt will ask for Password: {githubkey}
 14. Press Enter
 15. The git repo will be downloaded
