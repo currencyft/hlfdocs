@@ -48,7 +48,7 @@ Setup the Java home
     cd test-network
 
     ./network.sh down
-
-- ./network.sh up createChannel -c channel1 -ca -s couchdb
-
-- $JAVA_HOME ./network.sh deployCC -ccn walletcc -ccp /Users/peteaston/ge/walletcc/walletcc -ccl java -c channel1
+    
+    ./network.sh up createChannel -c channel1 -ca -s couchdb
+    
+    $JAVA_HOME ./network.sh deployCC -ccn walletcc -ccp /Users/peteaston/ge/walletcc/walletcc -ccl java -c channel1
