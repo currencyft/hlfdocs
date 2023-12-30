@@ -130,6 +130,6 @@ Install jq
 
 1. Run the comand below to install jq
     
-    brew install jq
+    ```brew install jq```
 
 
