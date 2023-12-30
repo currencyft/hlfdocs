@@ -1,5 +1,5 @@
 ## Installations
-Install xcode
+### Install xcode
 1. Check that xcode is install by typing in the command below
     
     ```xcode-select -v```
@@ -8,7 +8,7 @@ Install xcode
     ```xcode-select --install```
 3. then install brew below
 
-Install brew
+### Install brew
 1. Install brew
     
     ```h -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”```
@@ -17,7 +17,7 @@ Install brew
 4. then install git below
 
 
-Install Git
+### Install Git
 1. check version
     
     ```git --version```
@@ -35,7 +35,7 @@ Install Git
     ```/opt/homebrew/bin/git```
 
 
-Install Node
+### Install Node
 1. update brew 
     
     ```brew upgrade```
@@ -50,7 +50,7 @@ Install Node
     ```npm -v```
 
 
-Install nvm
+### Install nvm
 1. install nvm
     
     ```brew install nvm```
@@ -73,7 +73,7 @@ Install nvm
     
     ```nvm alias default 16```
 
-Install curl
+### Install curl
 1. install curl
     
     ```brew install curl```
@@ -100,18 +100,18 @@ Install curl
     
     ```/opt/homebrew/opt/curl/bin/curl```
 
-Install golang
+### Install golang
 1. head over to the web page https://go.dev/dl/
 2. download the arm version for mac book m3 chip
 3. double click the installer to install go
 
-Install hyperledger fabric
+### Install hyperledger fabric
 1. run the following command to install the latest version of hyperledger fabric
     
     ```curl -sSL http://bit.ly/2ysbOFE | bash -s```
 
 
-Install Java
+### Install Java
 1. run the command below to install java
     
     ```brew install openjdk@17```
@@ -126,7 +126,7 @@ Install Java
     ```export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"```
 
 
-Install jq
+### Install jq
 
 1. Run the comand below to install jq
     

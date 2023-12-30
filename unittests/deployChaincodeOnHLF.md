@@ -41,19 +41,27 @@ Execute the contents of this file if this hasn't been done before.
 
 
 ### Start the Hyperledger Fabric
+1. Start the hyperledger fabric and deploy chaincode
 
-    cd ~
+    ```cd ~```
     
-    cd hlfpte
+    
+    ```cd hlfpte```
 
-    cd hlfpte
     
-    cd fabric-samples
+    ```cd hlfpte```
     
-    cd test-network
+    
+    ```cd fabric-samples```
+    
+    
+    ```cd test-network```
 
-    ./network.sh down
     
-    ./network.sh up createChannel -c channel1 -ca -s couchdb
+    ```./network.sh down```
     
-    $JAVA_HOME ./network.sh deployCC -ccn walletcc -ccp /Users/peteaston/ge/walletcc/walletcc -ccl java -c channel1
+    
+    ```./network.sh up createChannel -c channel1 -ca -s couchdb```
+    
+    
+    ```$JAVA_HOME ./network.sh deployCC -ccn walletcc -ccp /Users/peteaston/ge/walletcc/walletcc -ccl java -c channel1```
