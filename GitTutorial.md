@@ -17,6 +17,7 @@
     git config --global user.name {username}
     git config --global user.email {emailaddress}
 10. clone a git repo
+    
     git clone _url_
 11. A prompt will ask for Username: {username}
 12. Press Enter
