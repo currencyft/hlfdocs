@@ -9,8 +9,6 @@ Execute the contents of this file if this hasn't been done before.
 
 ### After Developing the Chaincode on IntelliJ
 
-<div style="border-bottom: 4px solid #ccc">Hello</div>
-
 1. Inside IntelliJ, click on Gradle tab on the right
 2. The Gradle panel opens
 3. Click on "distribution" drop down
