@@ -4,10 +4,7 @@
 
 1. Deploy chaincode and run some tests
 
-    <code style=" white-space: normal; word-wrap: break-word; width:300px; background-color:#ccc;">
-
-    
-    ./network.sh down
+    <code style="width:300px; background-color:#ccc;">./network.sh down
     
     ./network.sh up createChannel -c channel1 -ca -s couchdb
     
