@@ -27,7 +27,7 @@ Setup the Java home
     /opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home
 
 
-START THE HYPERLEDGER FABRIC
+### START THE HYPERLEDGER FABRIC
 cd ~
 cd hlfpte
 cd fabric-samples
