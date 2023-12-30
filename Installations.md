@@ -108,20 +108,22 @@ Install golang
 Install hyperledger fabric
 1. run the following command to install the latest version of hyperledger fabric
     
-    curl -sSL http://bit.ly/2ysbOFE | bash -s
+    ```curl -sSL http://bit.ly/2ysbOFE | bash -s```
 
 
 Install Java
 1. run the command below to install java
     
-    brew install openjdk@17
+    ```brew install openjdk@17```
 2. after installation run the codes below to add java to class path
     
-    sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+    ```sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk```
     
-    echo 'export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"' >> ~/.zshrc
     
-    export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+    ```echo 'export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"' >> ~/.zshrc```
+    
+    
+    ```export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"```
 
 
 Install jq
