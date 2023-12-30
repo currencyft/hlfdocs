@@ -1,4 +1,4 @@
-##Git tutorial
+## Git tutorial
 1. create a folder
     mkdir foldername
 2. navigate into the foldername
