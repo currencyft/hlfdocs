@@ -76,10 +76,8 @@ Execute the contents of this file if this hasn't been done before.
     
     - Use the path above as below in the command to compile and deploy the chaincode.
 
-    - **Note that you must install and use Java 11 in the class path to deploy the chaincode otherwise, you will get error below when calling the contract methods**
-
     ```JAVA_HOME=/Users/peteaston/Library/Java/JavaVirtualMachines/corretto-11.0.21/Contents/Home ./network.sh deployCC -ccn walletcc -ccp /Users/peteaston/ge/walletcc/walletcc -ccl java -c channel1```
-
-2. 
+    
+    - **Note that you must install and use Java 11 in the class path to deploy the chaincode otherwise, you will get error below when calling the contract methods**
 
     ```Error: endorsement failure during invoke. response: status:500 message:"Undefined contract called"```
