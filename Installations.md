@@ -76,17 +76,19 @@ Install nvm
 Install curl
 1. install curl
     
-    brew install curl
+    ```brew install curl```
 2. check curl
     
-    which curl
+    ```which curl```
 3. this version is obtained
     
-    /usr/bin/curl
+    ```/usr/bin/curl```
 4. execute the following commands to override the defualt curl from macOS
     
-    echo 'export PATH="/opt/homebrew/opt/curl/bin:$PATH"' >> ~/.zshrc
-    export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
+    ```echo 'export PATH="/opt/homebrew/opt/curl/bin:$PATH"' >> ~/.zshrc```
+
+
+    ```export LDFLAGS="-L/opt/homebrew/opt/curl/lib"```
     export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
 5. close the terminal and re-open it again
 6. execute the following command
