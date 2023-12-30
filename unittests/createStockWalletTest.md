@@ -1,5 +1,7 @@
 ## Deploy createStockWalletTest
 
+1. Deploy chaincode and run some tests
+
     ```
     ./network.sh down
     
