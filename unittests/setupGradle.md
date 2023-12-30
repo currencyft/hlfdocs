@@ -2,12 +2,12 @@
 
 1. Setup the repositories on the gradle as below:
 
-    <code>repositories {
+    ```repositories {
         mavenCentral()
         maven {
             url 'https://jitpack.io'
         }
-    }</code>
+    }
 
 2. ***Note: If not setup as above, the following error might be thrown when adding kulid***
     
