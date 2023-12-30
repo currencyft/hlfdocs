@@ -1,3 +1,4 @@
+## Installations
 Install xcode
 1. Check that xcode is install by typing in the command below
     xcode-select -v
