@@ -1,3 +1,5 @@
+## Setup Java Class Path and Java Home 
+
 #### Set the Java Class Path
 
 - Type the command below to list installed java versions 
