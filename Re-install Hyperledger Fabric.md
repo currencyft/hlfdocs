@@ -1,5 +1,6 @@
-## Install Hyperledger Fabric
+## Re-install Hyperledger Fabric
 
+### Navigate to existing installation
 - Navigate to hyperledger fabric ~/fabric-samples/test-network folder
     - cd ~/fabric-samples/test-network
 - Stop Hyperledger fabric
