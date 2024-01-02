@@ -4,8 +4,9 @@
 - Navigate to hyperledger fabric ~/fabric-samples/asset-transfer-basic
 - Copy the chaincode-java
 - Paste it into an external folder
-    - /Users/{username}/sample
-    - /Users/{username}/sample/chaincode-java
+    ```
+    /Users/{username}/sample
+    /Users/{username}/sample/chaincode-java
 - Navigate to hyperledger fabric ~/fabric-samples/test-network folder
     - cd ~/fabric-samples/test-network
 - Stop Hyperledger fabric
