@@ -23,7 +23,7 @@
     - export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home
 
 
-- #### If an error occurs and the zshrc file nor terminal commands like sudo and nano could no longer be accessed
+### If an error occurs and the zshrc file nor terminal commands like sudo and nano could no longer be accessed
 - Open the Terminal from Applications
     - Click on Settings from the Terminal icon
     - Click on General
