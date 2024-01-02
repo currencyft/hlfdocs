@@ -7,8 +7,9 @@
     ```
     /Users/{username}/sample
     /Users/{username}/sample/chaincode-java
-- Navigate to hyperledger fabric ~/fabric-samples/test-network folder
-    - cd ~/fabric-samples/test-network
+- Navigate to hyperledger fabric network ~/fabric-samples/test-network folder
+    ```
+    cd ~/fabric-samples/test-network
 - Stop Hyperledger fabric
     - ./network.sh down
 - Start the network 
