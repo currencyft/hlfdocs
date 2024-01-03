@@ -11,8 +11,8 @@
     ```
     /Users/peteaston/hlfa/fabric-samples/test-network/organizations/fabric-ca/ordererOrg/ca-cert.pem
 
-- In the Destination Keychain field, select System and click **Open**.
+- In the Destination Keychain field, select System and click ***Open***.
 
-- Right-click the certificate in Keychain Access and select **Get Info**.
+- Right-click the certificate in Keychain Access and select ***Get Info***.
 
-- Expand the Trust section and under **When using this certificate**, select Always Trust.
+- Expand the Trust section and under ***When using this certificate***, select ***Always Trust***.
