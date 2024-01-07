@@ -112,6 +112,12 @@
 
 
 ### Install Java
+### Recommended approach
+1. Navigate to oracle java with the link below for guidance on oracle java installation
+    - https://docs.oracle.com/en/java/javase/21/install/installation-jdk-macos.html#GUID-F575EB4A-70D3-4AB4-A20E-DBE95171AB5F
+2. Download JDK latest and double click to install
+
+### Alternative Java Install - Not recommended
 1. run the command below to install java
     
     ```brew install openjdk@17```
