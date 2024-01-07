@@ -11,7 +11,7 @@
 ### Install brew
 1. Install brew
     
-    ```h -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”```
+    ```/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”```
 2. type mac password if password prompt comes up
 3. installation should run through to end
 4. then install git below
