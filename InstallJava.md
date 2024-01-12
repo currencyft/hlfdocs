@@ -29,7 +29,7 @@
 4. To setup more than one jdk, run the steps 1 to 2 again.
     - However, open .zshrc file again
     - Comment out the new path set and leave the old path in order to retain the prefered version
-    &nbsp;
+    \n
 
     
     ```
