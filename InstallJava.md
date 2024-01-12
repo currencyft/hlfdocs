@@ -17,6 +17,7 @@
 3. Setup JAVA_HOME
     
     ```export JAVA_HOME=$(/usr/libexec/java_home -v 17)```
+    
     or 
     
     ```export JAVA_HOME=$(/usr/libexec/java_home -v 11)```
