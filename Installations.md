@@ -17,8 +17,8 @@
 4. then install git below
 5. after installation run the command below to add brew to path
     
-    ```(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/eth/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"```
+    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/eth/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 ### Install Git
