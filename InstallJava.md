@@ -30,6 +30,7 @@
     - However, open .zshrc file again
     - Comment out the new path set and leave the old path in order to retain the prefered version
 
+    
     ```
     export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
     #export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
