@@ -7,7 +7,7 @@
 export JAVA_HOME=$(/usr/libexec/java_home -v 11)
  
  
- ./network.sh deployCC -ccn walletcc -ccp /Users/eth/ge/walletcc -ccl java -c channel1
+./network.sh deployCC -ccn walletcc -ccp /Users/eth/ge/walletcc -ccl java -c channel1
 
 
 source ./setOrg1Peer.sh
