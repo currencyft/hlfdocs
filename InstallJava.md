@@ -6,13 +6,15 @@
     ```brew install openjdk@17```
 2. after installation run the codes below to add java to symlink, add java to class path and make java seen by compilers
     
-    ```sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+    ```
+    sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
     
     
     echo 'export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"' >> ~/.zshrc
     
     
-    export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"```
+    export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+    ```
 
 3. Setup JAVA_HOME
     
