@@ -1,0 +1,10 @@
+1. brew install node
+2. node --version
+3. npm --version
+4. install nvm
+5. copy and paste the below code from $HOME
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+6. follow instruction after installation completes. that is 
+    export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
