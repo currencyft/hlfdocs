@@ -1,0 +1,28 @@
+1. brew  install go
+2. create a go folder
+    mkdir go
+3. set the GOPATH and PATH on the ~/.zshrc file
+    nano ~/.zshrc
+4. copy the following inside the .zshrc file
+    export GOPATH=$HOME/go
+    export GOROOT="$(brew --prefix golang)/libexec"
+    export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+    export PATH="$PATH:$(go env GOPATH)/bin"
+5. create a folder "$HOME/go/src" inside the $HOME/go folder
+6. create file "$HOME/go/src/home/main.go" and paste the following in the file
+    package main
+
+    func main() {
+        println("Hello World!")
+    }
+7. inside the $HOME/go/src/home folder run the file
+    go run main.go
+8. it will print the following 
+    Hello World!
+9. compile it and automatically it will be moved to $GOPATH/bin
+    cd $HOME/go/src/home 
+    go install .
+10. the program will automatically be copied into $GOPATH/bin
+11. run the program from $HOME
+    cd ~
+    hello
