@@ -1,0 +1,6 @@
+To start using JPA, simply add the following to the pom.xml file
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>

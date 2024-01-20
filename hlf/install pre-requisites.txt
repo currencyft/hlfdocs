@@ -1,0 +1,7 @@
+
+
+AFTER installation
+Encountered error: Failed to pull hyperledger/fabric-javaenv:2.3: no matching manifest for linux/arm64/v8 in the manifest list entries
+
+Solution: run the code below:
+docker pull --platform linux/x86_64 hyperledger/fabric-javaenv:2.3
