@@ -1,0 +1,26 @@
+Configure Run profile
+1. In IDE or IntelliJ IDE, select the running application profile
+2. It's located on the IntelliJ task bar at the top
+3. Click the drop down and select "Edit Configuration"
+4. The "Edit Configuration" dialogue box opens
+5. Highlight the existing Configuration
+6. Click on "Duplicate" on the upper left conner of the dialogue box
+7. Modify the Configuration Name e.g. "TrainingApplication MySQL"
+8. Click on "Modify options" drop down
+9. Click on "Add VM options"
+10. Paste the following in the VM options
+    -Dspring.profiles.active=mysql
+
+Configure properties file
+1. Create another "application-mysql.properties" file
+2. Spring boot will automatically detect the "mysql" and run the "application-mysql.properties" profile
+3. This will start the profile with MySQL Database
+
+
+Run the application
+1. To run the application in a desired profile, navigate to the run drop down in task bar
+2. Select the "TrainingApplication MySQL" for example as the profile we wish to use
+3. The Application will run and execute the MySQL database.
+4. To run the application in a default profile, navigate to the run drop down in task bar
+5. Select the "TrainingApplication" for example as the profile we wish to use
+6. The Application will run and execute the H2 database.

@@ -6,7 +6,7 @@ MySqlsh Commands
 mysqlsh
 \connect social-media-user@localhost:3306
 \sql
-use social-media-database
+# use social-media-database ###ignore this line
 select * from user_details;
 select * from post;
 \quit
