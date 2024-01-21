@@ -6,7 +6,10 @@ MySqlsh Commands
 mysqlsh
 \connect social-media-user@localhost:3306
 \sql
-# use social-media-database ###ignore this line
+use social-media-database; ###ignore the error below
+
+## Error during auto-completion cache update: Access denied; you need (at least one of) the PROCESS privilege(s) for this operation ##
+
 select * from user_details;
 select * from post;
 \quit
