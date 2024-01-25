@@ -1,0 +1,19 @@
+./network.sh down
+
+
+./network.sh up -s couchdb -ca
+
+
+./network.sh createChannel -c channel1 
+
+
+JAVA_HOME=/opt/homebrew/Cellar/openjdk@11/11.0.21/libexec/openjdk.jdk/Contents/Home ./network.sh deployCC -ccn walletcc -ccp /Users/eth/ge/walletcc -ccl java -c channel1
+
+
+source ./setOrg1Peer.sh
+
+
+peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID channel1 -n walletcc --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"function":"","Args":[]}'
+
+
+peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID channel1 -n walletcc --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"function":"createRetailWallet","Args":["{\"username\":\"retail@wallet.com\",\"signature\":\"MEUCIFWLdk9txar9XhWaOmEl4dn+m3n+gkOtVDEJjeypG4HRAiEApq4nKs7OqZNpC7tw+sZvZlAOCcf1TsOVBDdkZ7AD1N0\u003d\",\"public_key\":\"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE5Xfmw+pADwgyz4HGZOSp5IHKp8KbrFzfIsq+bwGjGQCY3q//s8bO/ZdS6fy4my9FC+VTqoSO5liNUPANwE3sHw\u003d\u003d\",\"owner_wallet_address\":\"branch_wallet_address1\"}"]}'
