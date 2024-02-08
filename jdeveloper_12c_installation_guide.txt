@@ -12,10 +12,32 @@ c:\orafmw
 
 java.exe -jar C:\Users\anyaduba25472\Downloads\V983385-01_1of2\fmw_12.2.1.4.0_soa_quickstart.jar
 
+(in mac)
+(/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/java -jar /Users/eth/ge/soa/soainst/fmw_12.2.1.4.0_soa_quickstart.jar)
+
+1b. Start jdeveloper
+
+Navigate to the folder below
+
+(mac)
+cd /Users/eth/Oracle/Middleware/Oracle_Home/jdeveloper/jdev/bin
+
+then type
+
+./jdev [Enter]
+
+
+
 2. After install navigate to the folder
 C:\orafmw\oracle_common\common\bin
 
+(in mac)
+(cd /Users/eth/Oracle/Middleware/Oracle_Home/oracle_common/common/bin)
+
 3. Double click on config.cmd to install weblogic server
+
+(in mac)
+(./config.sh)
 
 4. Use the credentials
 username: weblogic
@@ -27,3 +49,18 @@ weblogic name: zion
 C:\orafmw\user_projects\domains\zion\
 
 6. Double click onf startWeblogic.cmd
+
+
+
+Change the font size
+
+Navigate to the folder below
+
+cd /Users/eth/.jdeveloper/system12.2.1.4.42.190911.2248/o.jdeveloper
+
+nano ide.properties [enter]
+
+uncomment and change the following from
+#Ide.FontSize=11
+to
+Ide.FontSize=14
