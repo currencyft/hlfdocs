@@ -1,0 +1,29 @@
+JDeveloper 12c installation
+
+Extract the SOA files into the same folder prior to running them
+
+cd program files
+cd java
+cd jdk1.8.0_202
+cd bin
+
+1. Install the jdeveloper on 
+c:\orafmw
+
+java.exe -jar C:\Users\anyaduba25472\Downloads\V983385-01_1of2\fmw_12.2.1.4.0_soa_quickstart.jar
+
+2. After install navigate to the folder
+C:\orafmw\oracle_common\common\bin
+
+3. Double click on config.cmd to install weblogic server
+
+4. Use the credentials
+username: weblogic
+password: weblogic123
+
+weblogic name: zion
+
+5. Start the weblogic by navigating to
+C:\orafmw\user_projects\domains\zion\
+
+6. Double click onf startWeblogic.cmd

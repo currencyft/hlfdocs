@@ -1,0 +1,12 @@
+Configuration Type: Key Store 
+Configuration Provider: AWS 
+Region: abv
+Master Key: abv 
+Credentials: Role ARN
+Role ARN: abv 
+
+
+sm_pat_077f2bccb76e09ee
+
+
+pUTqUc7TFMjLQuQyT53-HhXxrtjwFc5lbK1j2XDVCws
