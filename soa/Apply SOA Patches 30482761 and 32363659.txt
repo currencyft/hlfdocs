@@ -1,0 +1,182 @@
+Apply SOA Patches 30482761 and 32363659 FOR NXSD
+1.	Download the following SOA Patches listed above
+2.	Navigate to Oracle_Home
+3.	In this case C:\orafmw\
+4.	Navigate to OPatch folder
+5.	cd C:\orafmw\OPatch
+6.	Run the following code
+opatch lsinventory
+7.	Unzip the files 30482761 and 32363659 onto the C: drive
+8.	Navigate into the first folder
+9.	cd C:\ 30482761
+10.	Inside the folder run the following code
+C:\orafmw\OPatch\opatch.bat apply
+11.	Do the same for the folder 32363659
+12.	After installation then restart jdev using the code below
+cd C:\orafmw\jdeveloper\jdev\bin
+jdev -clean
+
+Downloading Jackson jar files
+1.	Also Download the following files and place them in the following folder
+com.fasterxml.jackson.databind-2.10.5.1.LIFERAY-PATCHED-1.jar
+jackson-core-2.13.1.jar
+jackson-jr-annotation-support-2.13.1.jar
+
+2.	Download the files from the following url below
+Maven Central Repository Search
+
+3.	Place the jar files in the folder below:
+C:\orafmw\jdeveloper\maven-archetype
+
+POM File Creation
+1.	Create a pom file in the project
+2.	Navigate to the following url and search for jackson-core
+Maven Central Repository Search
+3.	Download the pom file
+4.	Copy the contents of the pom file and use it to replace the contents of the pom file created in step 1 above
+5.	Under dependencies
+6.	Add the 3 jar files in the section “Downloading Jackson JAR files”
+
+Executing the Composite
+A.	Create JSONs
+1.	Create a JSON file for the Native format Input – Request for the REST Adapter
+2.	Create a JSON file for the Native format Output – Response for the REST Adapter
+
+B.	Create Schema Files for the BPEL’s Web Service
+1.	Create a Schema File for the Project having – Request and Response for the Project
+
+C.	Create and Configure the Rest Adapter
+
+1.	Drag the Rest Adapter from the Components section to Create the Rest Adapter
+2.	The “Rest Binding Configuration Wizard – Step 1 of 2” dialog opens, 
+a.	Name the Rest Binding
+b.	Select “Reference” in the “Type:” section
+c.	select the Check box “Response will be invoked by components using WSDL interfaces”
+d.	select the Check box “Enforce XML Schema Ordering”
+3.	Click Next
+4.	The “REST Binding Configuration Wizard – Step 2 of 2” appears
+5.	Under the “Resources” dialog box
+6.	In the “Base Url” Dialog enter the “Base Url: http://camltest.azurewebsites.net” 
+7.	In the “Resources” section select the existing resource “/” and click “edit” icon at the center
+8.	The Update REST Resource dialog box appears.
+9.	In the “Relative Path: ” section, enter the relative path “camluam/api/v1/auth/login”
+10.	Click Ok
+11.	In the “Operations Binding” section, Click on the “+” icon to add an operation
+12.	In the “Operation:” section, enter “Login”
+13.	In the “Resource:” section, the resource is selected by default. Or select it if not selected
+14.	In the “HTTP Verb:” section select “POST”
+15.	In the “Request” tab, click the “wheel” icon
+16.	The “Native Format Builder: Welcome” dialog box opens
+17.	Click Next
+18.	The “File Name and Directory” dialog box appears 
+19.	Leave default values (or rename accordingly) and click Next
+20.	“Choose Type” dialog box appears 
+21.	In the “Select file type: ” section, select “JSON Interchange Format”
+22.	Click Next
+23.	“JSON File Description” dialog box appears
+24.	In the “File name: ” section select an existing JSON file
+Since no input parameter is needed, simply create a json file with an empty tag {}
+25.	Leave defaults for the “Target namespace”, “Root Element”, “Character set”
+26.	Click Next
+27.	“Generate Native Format Schema File” dialog box appears
+An xml is generated to convert the JSON objects entered earlier to xml format
+28.	Click Next
+29.	“Native Format Builder: Finish” dialog box appears
+30.	Click Finish
+31.	Now configure the “Response” tab.
+32.	Click on the “Response” tab
+33.	Select “JSON” check box
+34.	The “Schema URL:” section appears
+35.	Click on the “wheel icon” next to the “search” icon
+36.	“Native Format Builder: Welcome” dialog box appears.
+37.	Click Next
+38.	The “File Name and Directory” dialog box appears 
+39.	Leave default values (or rename accordingly) and click Next
+40.	“Choose Type” dialog box appears 
+41.	In the “Select file type: ” section, select “JSON Interchange Format”
+42.	Click Next
+43.	“JSON File Description” dialog box appears
+44.	In the “File name: ” section select an existing JSON file
+Since an input parameter is needed, select a previously created JSON file
+45.	Leave defaults for the “Target namespace”, “Root Element”, “Character set”
+46.	Click Next
+47.	“Generate Native Format Schema File” dialog box appears
+An xml is generated to convert the JSON objects entered earlier to xml format
+48.	Click Next
+49.	“Native Format Builder: Finish” dialog box appears
+50.	Click Finish
+51.	Click “OK” to exit the “REST Operation Binding” dialog box
+52.	Click “Finish” to exit the “REST Binding Configuration Wizard – Step 2 OF 2”
+
+D.	Create and Configure the BPEL
+1.	Right click on the center of the composite and insert a BPEL Process
+2.	The “BPEL Process” dialog box appears
+3.	In the “Name:” section enter a name for the BPEL
+4.	In the “Template: ” section, select “Synchronous BPEL Process”
+5.	Select “Expose as a SOAP service” Check box
+6.	In the “Input: ” box click on the “search” icon
+7.	The “Type Chooser” dialog box appears
+8.	Expand the “Project Schema Files”
+9.	Expand an initially created Schema
+10.	 Select “Request” and click OK
+11.	In the “Output: ” box click on the “search” icon
+12.	The “Type Chooser” dialog box appears
+13.	Expand an initially created Schema
+14.	Select “Response” and click OK
+Note:
+If input from BPEL is being passed as input to REST, the schemas must match.
+Also if output from BPEL is being passed as output to REST, the schemas must match.
+15.	Click Ok
+16.	Next Wire the BPEL Process to the REST Adapter
+To do so in 16 above, Click on the Arrow on the right of the BPEL icon and drag it to the Arrow on the left of the REST Adapter
+17.	Double Click on BPEL Process icon
+18.	Drag and drop “Invoke” from the components into the region between “receiveInput” and “replyOutput” 
+19.	Wire “Invoke” to the “RestENairaLogin” REST Adapter
+20.	The “Edit Invoke” dialog box appears
+21.	In the “Name:” section enter the name of Invoke
+22.	In the “Operation:” section select the operation (Login)
+23.	In the “Input” tab click on the “+” sign
+24.	Click Ok
+25.	In the “Output” tab, click on the “+” sign
+26.	Click Ok
+27.	In the “Partner Link:” section, the partner link is selected by default
+28.	Click “Apply” and then “Ok”
+29.	Drag the “Assign” component from the components to the region between “receiveInput” and the “Invoke”
+30.	Double click on the Assign
+31.	The “Edit Assign” dialog box appears
+32.	In the “Copy Rules” tab
+33.	Wire “inputVariable” of the BPEL to the “inputVariable” of the Invoke
+34.	Click “Apply” and click “OK”
+35.	Drag another “Assign” component from the components to the region between “Invoke” and the “replyOutput”
+36.	Double click on the Assign
+37.	The “Edit Assign” dialog box appears
+38.	Wire “outputVariable” of the “Invoke” to the “outputVariable” of the BPEL
+39.	Click “Apply” and click “OK”
+40.	Click Save
+41.	Click on the “Source” tab of the BPEL
+42.	Assign the Header Parameters for the REST Adapter
+43.	Copy the following code to the Invoke section
+    <Invoke….>
+             <bpelx:toProperties>
+                <bpelx:toProperty name="rest.binding.http.user_id">"bulkpayment"</bpelx:toProperty>
+                <bpelx:toProperty name="rest.binding.http.password">"QWNjZXNzUEBzc3dvcmQxMjM$="</bpelx:toProperty>
+          </bpelx:toProperties>
+</Invoke>
+44.	The two properties are the user_id and password header parameters
+45.	Right click on the Project
+46.	Click Deploy
+47.	Click on the Project to deploy
+
+Configure Rest Adapter
+1.	After configuring the Rest Adapter and Wiring the BPEL Process to the Rest Adapter, double click on the BPEL Process.
+2.	Open the Source Code of the BPEL process
+3.	Modify the Invoke section like below to add the header parameters (user_id and password)
+<Invoke….>
+
+<bpelx:toProperties>
+       <bpelx:toProperty name="rest.binding.http.user_id">"bulkpayment"</bpelx:toProperty>
+       <bpelx:toProperty name="rest.binding.http.password">"QWNjZXNzUEBzc3dvcmQxMjM$="</bpelx:toProperty>
+</bpelx:toProperties>
+</Invoke>
+4.	The two properties are the user_id and password header parameters.
+
