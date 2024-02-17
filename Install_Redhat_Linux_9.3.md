@@ -55,8 +55,16 @@
     7.	Verify that the swap is active by using the “swapon” command
     sudo swapon --show
 
-13. Install Oracle Database PreInstall file
+13. Add host entry
+    nano /etc/hosts
+    {ip address} soa
+    sudo reboot
+
+
+
+14. Install Oracle Database PreInstall file
 
     curl -o oracle-database-preinstall-19c-1.0-3.el8.aarch64.rpm  https://yum.oracle.com/repo/OracleLinux/OL8/appstream/aarch64/getPackage/oracle-database-preinstall-19c-1.0-3.el8.aarch64.rpm
 
     yum -y localinstall oracle-database-preinstall-19c-1.0-3.el8.aarch64.rpm
+
