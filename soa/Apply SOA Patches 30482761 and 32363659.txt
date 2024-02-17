@@ -5,7 +5,7 @@ Apply SOA Patches 30482761 and 32363659 FOR NXSD
 4.	Navigate to OPatch folder
 5.	cd C:\orafmw\OPatch
 6.	Run the following code
-opatch lsinventory
+./opatch lsinventory
 7.	Unzip the files 30482761 and 32363659 onto the C: drive
 8.	Navigate into the first folder
 9.	cd C:\ 30482761

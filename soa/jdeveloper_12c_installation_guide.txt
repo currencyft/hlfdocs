@@ -15,7 +15,10 @@ java.exe -jar C:\Users\anyaduba25472\Downloads\V983385-01_1of2\fmw_12.2.1.4.0_so
 (in mac)
 (/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/java -jar /Users/eth/ge/soa/soainst/fmw_12.2.1.4.0_soa_quickstart.jar)
 
-1b. Start jdeveloper
+1b. Download msvcr100.dll for windows OS
+
+
+1c. Start jdeveloper
 
 Navigate to the folder below
 
