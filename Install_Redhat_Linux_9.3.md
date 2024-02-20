@@ -64,6 +64,8 @@
 
 14. Install Oracle Database PreInstall file
 
+    cd /tmp
+
     curl -o oracle-database-preinstall-19c-1.0-3.el8.aarch64.rpm  https://yum.oracle.com/repo/OracleLinux/OL8/appstream/aarch64/getPackage/oracle-database-preinstall-19c-1.0-3.el8.aarch64.rpm
 
     yum -y localinstall oracle-database-preinstall-19c-1.0-3.el8.aarch64.rpm
@@ -89,7 +91,7 @@
     sudo reboot
 
 20. Login again
-    ssh -X root@ipaddress
+    ssh -X root@192.168.64.14
     xhost +
 
 21. Create a folder for oracle required variables and create setEnv.sh
@@ -133,10 +135,10 @@
     sudo mv /tmp/LINUX.ARM*19* /u01/app/oracle/product/19.0.0/dbhome_1
 
 26. Login as oracle
-    ssh -X oracle@ipaddress
+    ssh -X oracle@192.168.64.14
 
 27. Enter the command below
-    DISPLAY={ipaddress}:0.0; export DISPLAY
+    DISPLAY=192.168.64.15:10.0; export DISPLAY
 
 28. Echo the DISPLAY variable
     echo $DISPLAY
