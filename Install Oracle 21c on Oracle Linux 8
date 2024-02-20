@@ -36,4 +36,4 @@ Change to oracle user
 
 global database name: dbat21c
 oracle system identifier: dbat21c
-pluggable database name: orclpdb
+pluggable database name: dbatpdb
