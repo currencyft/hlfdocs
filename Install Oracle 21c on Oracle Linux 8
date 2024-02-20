@@ -1,0 +1,11 @@
+1. Check hostname
+    # hostname
+    {host name appears here}
+2. Add hostname and ip on /etc/hosts
+    # nano /etc/hosts
+    hostipaddress hostnameabove {custom name}
+3. Install the preinstall file
+    # yum list oracle-database-preinstall-21c
+    # yum install -y oracle-database-preinstall-21c
+4. Set the oracle passwd
+    # passwd oracle
