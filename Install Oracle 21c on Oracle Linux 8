@@ -2,6 +2,15 @@ Login as root
 1. Check hostname
     $ hostname
     {host name appears here}
+2. Create a swap file
+    $ sudo dd if=/dev/zero of=/swapfile count=16096 bs=1MiB
+    $ sudo chmod 600 /swapfile
+    $ sudo mkswap /swapfile
+    $ sudo swapon /swapfile
+    $ sudo nano /etc/fstab
+    Paste the following in the /etc/fstab
+    /swapfile swap swap defaults 0 0
+    $ sudo swapon --show
 2. Add hostname and ip on /etc/hosts
     $ nano /etc/hosts
     hostipaddress hostnameabove {custom name}
@@ -37,3 +46,7 @@ Change to oracle user
 global database name: dbat21c
 oracle system identifier: dbat21c
 pluggable database name: dbatpdb
+
+9. During Installer a popup asks for the two scripts to be run as root.
+    - Copy the path of each script and paste in terminal and run the scripts as root. 
+    - Press enter for the second script
