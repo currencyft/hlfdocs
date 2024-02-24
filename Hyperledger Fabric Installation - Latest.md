@@ -1,9 +1,13 @@
-brew install git go jq softhsm
+1. install docker desktop
 
-brew install --appdir="/Applications" docker --cask
+2. Install prerequisites
+    brew install git go jq softhsm
 
-open /Applications/Docker.app
+3. Install docker 
+    brew install --appdir="/Applications" docker --cask
+    
+    open /Applications/Docker.app
 
-
-curl -sSL https://bit.ly/2ysbOFE | bash -s
+4. Install hld
+    curl -sSL https://bit.ly/2ysbOFE | bash -s
 
