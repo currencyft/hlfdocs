@@ -30,3 +30,12 @@
 13. A prompt will ask for Password: {githubkey}
 14. Press Enter
 15. The git repo will be downloaded
+For existing git
+16. Add git origin
+    git add .
+    git commit -m "update commit"
+    git remote add origin https://github.com/comvarse/test.git
+
+    git branch -M main
+
+    git push -u origin main 
