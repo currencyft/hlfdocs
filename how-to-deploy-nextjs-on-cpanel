@@ -1,0 +1,10 @@
+1. In package.json, add the following on the first line
+{
+  "homepage":"https://yourdomain.com",
+}
+2. In the script section of the package.json add the following
+{
+  "scripts":{
+    "start":"NODE_ENV=production node server.js",
+  }
+}
