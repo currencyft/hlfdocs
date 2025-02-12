@@ -51,3 +51,33 @@ app.prepare().then(() => {
         })
 })
 ```
+4. Build the project by running the code below
+
+```npm run build```
+
+5. Highlight and Zip the project files (turn on hidden files). Ignore node_modules folder
+
+6. Login to CPANEL
+
+7. Upload the zip file to the root of the domain
+
+8. Setup Node in the CPANEL
+
+9. Click on Create Application
+
+10. Fill out the form as below
+Node Version: 20.18 or any one matching the current version of your project
+Application mode: Production
+Application root: yourdomain.com
+Application url: yourdomain.com
+Application startup file: server.js
+
+11. Click on Create
+
+12. After creation of the node app, Stop the application
+
+13. Scroll down and click on Run NPM Install
+
+14. Start the node project again
+
+15. Go to url and type yourdomain.com to display your project
