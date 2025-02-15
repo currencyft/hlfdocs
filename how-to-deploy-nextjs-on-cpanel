@@ -77,6 +77,10 @@ Application startup file: server.js
 12. After creation of the node app, Stop the application
 
 13. Scroll down and click on Run NPM Install
+  Error:
+    I got an error of "unable to resolve react@...19
+  Soln:
+    I edited the package.json from anywhere I see @^19 to @^18
 
 14. Start the node project again
 
